@@ -25,7 +25,7 @@ remotes::install_github("Nowosad/reedsolomon")
 library(terra)
 #> terra 1.6.46
 s1 = rast(system.file("ex/logo.tif", package = "terra"))
-plot(s1)
+plot(s1, 1:3, nr = 1)
 ```
 
 <img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
