@@ -1,0 +1,16 @@
+Package: reedsolomon
+Title: Reed-Solomon Algorithm for Remote Sensing Data Fusion
+Version: 0.0.1
+Authors@R: c(
+    person(given = "Jakub", family = "Nowosad", 
+    role = c("aut", "cre"),
+    email = "nowosad.jakub@gmail.com", 
+    comment = c(ORCID = "0000-0002-1057-3721")))
+Description: Applies the Reed-Solomon algorithm on remote sensing data.
+    It is based on the work of Werner (Werner (2020) <doi:10.3390/a13080188>). 
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.2
+Imports: 
+    terra
