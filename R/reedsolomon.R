@@ -1,9 +1,9 @@
 #' Reed-Solomon Pixel-Level Algorithm for Remote Sensing Data Fusion
 #'
 #' @param x SpatRaster
-#' @param a
-#' @param stretch TRUE/FALSE
-#' @param ...
+#' @param ade
+#' @param stretch TRUE/FALSE Should all layers be stretch to the same range of values? It calls [terra::stretch()]
+#' @param ... Other parameters of  [terra::stretch()] and [terra::app()]
 #'
 #' @return SpatRaster
 #' @export

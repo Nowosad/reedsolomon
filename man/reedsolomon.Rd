@@ -9,9 +9,9 @@ reedsolomon(x, a, stretch = FALSE, ...)
 \arguments{
 \item{x}{SpatRaster}
 
-\item{stretch}{TRUE/FALSE}
+\item{stretch}{TRUE/FALSE Should all layers be stretch to the same range of values? It calls \code{\link[terra:stretch]{terra::stretch()}}}
 
-\item{...}{}
+\item{...}{Other parameters of  \code{\link[terra:stretch]{terra::stretch()}} and \code{\link[terra:app]{terra::app()}}}
 }
 \value{
 SpatRaster
