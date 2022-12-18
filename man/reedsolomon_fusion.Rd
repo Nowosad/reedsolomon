@@ -29,10 +29,10 @@ plot(s1)
 r1 = reedsolomon_fusion(s1, a = 256)
 plot(r1)
 
-s2 = s1 * 1.21
-r2 = reedsolomon_fusion(s2)
-s3 = s1 - 100
-r3 = reedsolomon_fusion(s3)
+#s2 = s1 * 1.21
+#r2 = reedsolomon_fusion(s2)
+#s3 = s1 - 100
+#r3 = reedsolomon_fusion(s3)
 }
 \references{
 Werner, P. A. (2020). Application of the Reed-Solomon Algorithm as a Remote Sensing Data Fusion Tool for Land Use Studies. Algorithms, 13(8), 188. MDPI AG. Retrieved from http://dx.doi.org/10.3390/a13080188

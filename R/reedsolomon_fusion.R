@@ -18,10 +18,10 @@
 #' r1 = reedsolomon_fusion(s1, a = 256)
 #' plot(r1)
 #'
-#' s2 = s1 * 1.21
-#' r2 = reedsolomon_fusion(s2)
-#' s3 = s1 - 100
-#' r3 = reedsolomon_fusion(s3)
+#' #s2 = s1 * 1.21
+#' #r2 = reedsolomon_fusion(s2)
+#' #s3 = s1 - 100
+#' #r3 = reedsolomon_fusion(s3)
 reedsolomon_fusion = function(x, a, stretch = FALSE, ...){
   if (!all(terra::is.int(x))){
     warning("Input 'x' should contain integer values. Results may not be correct")
@@ -40,6 +40,6 @@ reedsolomon_fusion = function(x, a, stretch = FALSE, ...){
   return(r)
 }
 reedsolomon_equation = function(s, a){
-  sum(s * (a ^ seq_along(s)))
+  sum(s * (a ^ (seq_along(s) - 1)))
 }
 
