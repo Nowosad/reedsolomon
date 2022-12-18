@@ -43,3 +43,5 @@ reedsolomon_equation = function(s, a){
   sum(s * (a ^ (seq_along(s) - 1)))
 }
 
+# focal?
+# f <- focal(s1, w = 3, fun = reedsolomon_equation, a = 256)
