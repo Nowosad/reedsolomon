@@ -26,6 +26,7 @@ jobs:
           extra-packages: |
              any::rcmdcheck
              any::pkgdown
+             any::covr
           needs: check
 
       - uses: r-lib/actions/check-r-package@v2
