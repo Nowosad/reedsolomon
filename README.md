@@ -11,7 +11,9 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 <!-- badges: end -->
 
 The goal of {reedsolomon} is to apply the Reed-Solomon algorithm on
-remote sensing data. It is based on the work of Werner (2020).
+remote sensing data. It allows using Reed-Solomon algorithm for data
+fusion (turning many raster layers into one) and performing reverse
+transformation (Werner (2020)).
 
 ## Installation
 
@@ -41,6 +43,13 @@ plot(r1)
 ```
 
 <img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
+
+``` r
+s2 = reedsolomon_reverse_fusion(r1, a = 256, k = 3)
+plot(s2, 1:3, nr = 1)
+```
+
+<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
 
 ## References
 

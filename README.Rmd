@@ -20,7 +20,8 @@ knitr::opts_chunk$set(
 [![R-CMD-check](https://github.com/Nowosad/reedsolomon/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Nowosad/reedsolomon/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-The goal of {reedsolomon} is to apply the Reed-Solomon algorithm on remote sensing data. It is based on the work of Werner (2020).
+The goal of {reedsolomon} is to apply the Reed-Solomon algorithm on remote sensing data. 
+It allows using Reed-Solomon algorithm for data fusion (turning many raster layers into one) and performing reverse transformation (Werner (2020)).
 
 ## Installation
 
@@ -45,6 +46,12 @@ plot(s1, 1:3, nr = 1)
 library(reedsolomon)
 r1 = reedsolomon_fusion(s1)
 plot(r1)
+```
+
+```{r}
+#| fig.height: 2
+s2 = reedsolomon_reverse_fusion(r1, a = 256, k = 3)
+plot(s2, 1:3, nr = 1)
 ```
 
 ## References
