@@ -36,7 +36,7 @@ plot(s1, 1:3, nr = 1)
 
 ``` r
 library(reedsolomon)
-r1 = reedsolomon(s1)
+r1 = reedsolomon_fusion(s1)
 plot(r1)
 ```
 
