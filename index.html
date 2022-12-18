@@ -60,7 +60,7 @@
 <div class="page-header"><h1 id="reedsolomon">reedsolomon<a class="anchor" aria-label="anchor" href="#reedsolomon"></a>
 </h1></div>
 <!-- badges: start -->
-<p>The goal of {reedsolomon} is to apply the Reed-Solomon algorithm on remote sensing data. It is based on the work of Werner (2020).</p>
+<p>The goal of {reedsolomon} is to apply the Reed-Solomon algorithm on remote sensing data. It allows using Reed-Solomon algorithm for data fusion (turning many raster layers into one) and performing reverse transformation (Werner (2020)).</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
@@ -83,6 +83,10 @@
 <span><span class="va">r1</span> <span class="op">=</span> <span class="fu"><a href="reference/reedsolomon_fusion.html">reedsolomon_fusion</a></span><span class="op">(</span><span class="va">s1</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/pkg/terra/man/plot.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">r1</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-3-1.png" width="100%"></p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">s2</span> <span class="op">=</span> <span class="fu"><a href="reference/reedsolomon_reverse_fusion.html">reedsolomon_reverse_fusion</a></span><span class="op">(</span><span class="va">r1</span>, a <span class="op">=</span> <span class="fl">256</span>, k <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/pkg/terra/man/plot.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">s2</span>, <span class="fl">1</span><span class="op">:</span><span class="fl">3</span>, nr <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span></code></pre></div>
+<p><img src="reference/figures/README-unnamed-chunk-4-1.png" width="100%"></p>
 </div>
 <div class="section level2">
 <h2 id="references">References<a class="anchor" aria-label="anchor" href="#references"></a>
